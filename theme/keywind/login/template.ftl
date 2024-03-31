@@ -17,6 +17,7 @@
   displayRequiredFields=false
   script=""
   showAnotherWayIfPresent=true
+  width="max-w-md"
 >
   <#assign cardHeader>
     <@logo.kw>
@@ -70,7 +71,7 @@
       <@document.kw script=script />
     </head>
     <@body.kw>
-      <@container.kw>
+      <@container.kw width=width>
         <@card.kw content=cardContent footer=cardFooter header=cardHeader />
         <@nav.kw>
           <#nested "nav">
